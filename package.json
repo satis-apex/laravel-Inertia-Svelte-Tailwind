@@ -13,9 +13,13 @@
         "axios": "^0.25",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "svelte": "^3.47.0",
+        "svelte-loader": "^3.1.2"
     },
     "dependencies": {
+        "@inertiajs/inertia": "^0.11.0",
+        "@inertiajs/inertia-svelte": "^0.8.0",
         "laravel-mix-svelte": "github:wewowweb/laravel-mix-svelte"
     }
 }
