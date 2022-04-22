@@ -19,3 +19,9 @@ Route::get('/', function () {
         'user'=>'test'
     ]);
 });
+Route::get('/about', function () {
+    sleep(5);
+    return Inertia::render('About', [
+        'user'=>'test'
+    ]);
+});

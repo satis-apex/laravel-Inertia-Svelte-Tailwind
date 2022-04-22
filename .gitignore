@@ -21,7 +21,8 @@ package-lock.json
 
 public/js/app.js.LICENSE.txt
 public/js/app.js
+public/js/**
 public/css/app.css.map
 public/css/app.css
-public/css/mix-manifest.json
+public/mix-manifest.json
 public/build/

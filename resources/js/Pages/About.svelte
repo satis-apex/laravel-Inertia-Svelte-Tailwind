@@ -7,5 +7,5 @@
 <a href="/" use:inertia>Home</a>
 <a href="/about" use:inertia>About</a>
 <h1 class="text-3xl font-bold underline">
-    hello {user}, from svelte home
+    hello {user}, from svelte about
 </h1>

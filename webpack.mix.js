@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const path = require('path');
 require('laravel-mix-svelte');
 /*
  |--------------------------------------------------------------------------
@@ -15,4 +16,14 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require("tailwindcss"),
     ])
-    .svelte();
+    .webpackConfig({
+        output: { chunkFilename: 'js/[name].js?id=[chunkhash]' },
+        resolve: {
+            alias: {
+                '@': path.resolve('resources/js')
+            }
+        }
+    })
+    .extract()
+    .svelte()
+    .version();
